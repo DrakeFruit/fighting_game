@@ -1,0 +1,131 @@
+{
+  "RootObject": {
+    "__guid": "c53507c9-7615-4589-85e9-f25a6992b07f",
+    "Flags": 0,
+    "Name": "player",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "FighterGame.FighterMovement",
+        "__guid": "aa24a8b4-141b-4ad5-abb9-99040bdb1fc8",
+        "Collider": {
+          "_type": "component",
+          "component_id": "3b4e85ec-3c38-4d5e-8a6f-6636ff727031",
+          "go": "fd768fa4-254a-47d5-a09a-a89e738b1421",
+          "component_type": "CapsuleCollider"
+        },
+        "Gravity": 600,
+        "Speed": 180,
+        "Weight": 1
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "2110969c-d775-466b-967a-8f9d56653bed",
+        "Flags": 0,
+        "Name": "Model",
+        "Rotation": "-0.7071068,-0,0,0.7071068",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "a0bcb25b-0ccb-4cdd-aab2-efa5cb760704",
+            "BodyGroups": 1,
+            "CreateBoneObjects": false,
+            "Model": "models/player/hazmatsuit/hazmatsuit.vmdl",
+            "Morphs": {},
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          }
+        ]
+      },
+      {
+        "__guid": "fd768fa4-254a-47d5-a09a-a89e738b1421",
+        "Flags": 0,
+        "Name": "Collider",
+        "Rotation": "-0.7071068,-0,0,0.7071068",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Sandbox.CapsuleCollider",
+            "__guid": "3b4e85ec-3c38-4d5e-8a6f-6636ff727031",
+            "__enabled": false,
+            "End": "0,0,70",
+            "IsTrigger": false,
+            "Radius": 10.5,
+            "Start": "0,0,10",
+            "Static": false
+          },
+          {
+            "__type": "Sandbox.CharacterController",
+            "__guid": "7a193225-c230-4bde-9ccd-b8e0220ca2e7",
+            "Acceleration": 10,
+            "Bounciness": 0.3,
+            "GroundAngle": 45,
+            "Height": 80,
+            "IgnoreLayers": "",
+            "Radius": 11.5,
+            "StepHeight": 18,
+            "UseCollisionRules": false
+          }
+        ]
+      }
+    ],
+    "__variables": [
+      {
+        "Id": "Speed",
+        "Title": "Speed",
+        "Targets": [
+          {
+            "Id": "aa24a8b4-141b-4ad5-abb9-99040bdb1fc8",
+            "Property": "Speed"
+          }
+        ]
+      },
+      {
+        "Id": "Gravity",
+        "Title": "Gravity",
+        "Targets": [
+          {
+            "Id": "aa24a8b4-141b-4ad5-abb9-99040bdb1fc8",
+            "Property": "Gravity"
+          }
+        ]
+      },
+      {
+        "Id": "Weight",
+        "Title": "Weight",
+        "Targets": [
+          {
+            "Id": "aa24a8b4-141b-4ad5-abb9-99040bdb1fc8",
+            "Property": "Weight"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [
+    "sboxmp.hazmatsuit#58087"
+  ],
+  "IsValid": true,
+  "__version": 1
+}

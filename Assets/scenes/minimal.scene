@@ -1,0 +1,233 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "221e6bec-4288-4ec8-8b1d-96b0c0009819",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-0.0005744987,95.99998,1750",
+      "Rotation": "-0.5,0.4999999,0.4999999,0.5",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "4f69a98c-cbe2-4946-b3f1-8b6e62beee14",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 32.61,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 400,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "ef711cd3-8729-4112-98d3-4592158096bb",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "dc0c95ea-17e5-4960-b45b-98b87627aa91",
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "641ab561-88a1-4329-9b73-a82ba3e46703",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "0,0.7071068,0,0.7071068",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "75f94220-dc22-406a-abe9-e7a6cd7bad5d",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "12db0a3c-aacc-4a51-8279-255478f50c7d",
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "0,-80,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "f2300845-8df9-4ea3-a366-6a9476522c04",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "HideInGame": false,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2Qiw6CUAxDh1flgg/wAfr/X2pP0iWLJA25W9t16xHxFc4C30E4\u002Bt2FWbgKd2Ew4NTvIZxcb9ZH4b5db\u002Bb9z/oUzVh8m7lPc9FOzjRYQ8ZXyXxxXvrw4e72wvtWdoEPdzMXj8We9OHDXcvO7EqdN396eKaeLHjkLciePeYxi4z0mMFtMisablFvRXZ2Tj158KQOF78f9WSROMQBAAA=",
+            "Positions": [
+              "-383.9999,-400,31.5",
+              "384.0001,-400,31.5",
+              "384,80,31.5",
+              "-384,80,31.5",
+              "-384,80,-31.5",
+              "384,80,-31.5",
+              "384.0001,-400,-31.5",
+              "-383.9999,-400,-31.5"
+            ],
+            "TextureCoord": [
+              "3.000001,4.125",
+              "-2.999999,-0.2460938",
+              "3,0.375",
+              "-3.125,-0.2460938",
+              "-3,0.375",
+              "-3,-0.2460938",
+              "-2.999999,4.125",
+              "0.375,-0.2460938",
+              "3,0.375",
+              "3,0.2460938",
+              "3.000001,4.125",
+              "0.625,0.2460938",
+              "-2.999999,4.125",
+              "3.000001,0.2460938",
+              "-3,0.375",
+              "4.125,0.2460938",
+              "4.125,-0.2460938",
+              "-2.999999,0.2460938",
+              "0.375,0.2460938",
+              "3,-0.2460938",
+              "-3.125,0.2460938",
+              "3.000001,-0.2460938",
+              "0.625,-0.2460938",
+              "-3,0.2460938"
+            ],
+            "TextureUAxis": [
+              "1,-0.00000006357829,0",
+              "1,-0.00000006357829,-0",
+              "0.0000001907349,-1,0",
+              "-0.0000001907349,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25",
+              "0.25,0.25"
+            ],
+            "TextureOffset": [
+              "0,192",
+              "0,192",
+              "192.0003,0.000007629395",
+              "320.0003,0",
+              "0,0.000007629395",
+              "0.0001220703,0"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "SmoothingAngle": 40,
+          "Static": true
+        }
+      ]
+    },
+    {
+      "__guid": "d3e288a1-d881-49a5-8446-e975150994aa",
+      "Flags": 0,
+      "Name": "player",
+      "Position": "0,576,0",
+      "Enabled": true,
+      "__Prefab": "prefabs/player.prefab",
+      "__PrefabVariables": {
+        "Speed": 180,
+        "Gravity": 600,
+        "Weight": 1
+      }
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "minimal",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
